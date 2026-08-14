@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    min-height: 100vh;
+    font-family: "Bai Jamjuree" , sans-serif;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-row{
+    display: flex;
+}
+
+.hero{
+    background: url(../images/bg-header-desktop.png) no-repeat ;
+    padding: 6rem;
+    width: 100%;
+    max-width: 1440px;
+    text-align: center;
+}
+
+.hero .hero-logo{
+    margin-bottom: 2rem;
+    width: 6rem;
+}
+
+.hero .hero-logo img{
+    width: 100%;
+}
+
+.hero .hero-title h1{
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 0.7rem;
+}
+
+.hero .hero-description p{
+    color: hsl(201, 11%, 66%);
+    font-size: 1rem;
+    max-width: 36rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+}
+
+button{
+    padding: 0.7rem 1.5rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 2rem;
+    border: none;
+    box-shadow:  0 0 5px 3px rgba(0 , 0 , 0 , 0.1);
+}
+
+.ios-btn{
+    background: hsl(171, 66%, 44%);
+    margin-right: 0.4rem;
+}
+
+.mac-btn{
+    background: hsl(233, 100%, 69%);
+}
+
+button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+section{
+    margin-bottom: 6rem;
+}
+
+section h2{
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 0.7rem;
+}
+
+.section-2{
+    gap: 1rem;
+    margin-bottom: 6rem;
+}
+
+.section-2 .split-card{
+    display: flex;
+    margin-left: -8.5rem;
+}
+
+.description{
+    color: hsl(201, 11%, 66%);
+    font-size: 1rem;
+    max-width: 38rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.section-2  .split-card .split-content{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-left: 2rem;
+}
+
+.section-2  .split-card img{
+    margin-left: -2rem;
+}
+
+.section-2  .split-card .split-content .card h3{
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 0.8rem;
+}
+
+.section-2  .split-card .split-content .card p{
+    color: hsl(201, 11%, 66%);
+    max-width: 26rem;
+}
+
+.section-4 .cards{
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 10rem;
+    margin: 0 6rem 0 0;
+    gap: 2rem;
+}
+
+.section-4 .cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 1rem;
+}
+
+.section-4 .cards .card img{
+    width: 4rem;
+}
+
+/* Section "5" not styled yet its just took global styling*/
+
+footer{
+    background: hsl(202, 11%, 97%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.7rem 3rem;
+    align-items: center;
+}
+
+footer .footer-flex{
+    display: flex;
+    gap: 6rem;
+    width: 80%;
+    align-items: center;
+}
+
+footer .footer-flex .footer-txt{
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+}
+
+footer .footer-flex .txt-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+footer .footer-flex .footer-logo{
+    width: 4.5rem;
+    margin-left: 6rem;
+}
+
+footer .footer-flex .footer-logo img{
+    width: 100%;
+} 
+
+footer .icons{
+    display: flex;
+    gap: 1.4rem;
+    width: 20%;
+    align-items: center;
+}
+
+footer .icons img{
+    width: 1.5rem;
+}
+
+.footer-flex a{
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+
+@media (max-width: 700px) {
+
+    .hero{
+        padding: 0;
+        max-width: 720px;
+        background: url(../images/bg-header-mobile.png) no-repeat ;
+    }
+
+
+    .btn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-2 .split-card{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }       
+    
+}
+
