@@ -54,7 +54,7 @@ body{
 }
 
 button{
-    padding: 0.7rem 1.5rem;
+    padding: 0.8rem 2rem;
     color: white;
     font-weight: 600;
     border-radius: 2rem;
@@ -149,18 +149,15 @@ section h2{
 }
 
 .section-4 .cards .card img{
-    width: 4rem;
-}
-
-.section-4 .cards .card:last-child img{
-    margin-top: 1rem;
+    width: 2rem;
 }
 
 .section-5{
     align-items: center;
     gap: 6rem;
+    justify-content: center;
+    width: 100%;
 }
-/* Section "6" not styled yet its just took global styling*/
 
 footer{
     background: hsl(202, 11%, 97%);
@@ -220,23 +217,248 @@ footer .icons img{
 
 @media (max-width: 700px) {
 
-    .hero{
-        padding: 0;
-        max-width: 720px;
-        background: url(../images/bg-header-mobile.png) no-repeat ;
+    body {
+        overflow-x: hidden;
     }
 
-
-    .btn{
-        display: flex;
-        flex-direction: column;
+    .hero {
+        width: 100%;
+        max-width: none;
+        padding: 4rem 1.5rem 6rem;
+        background: url(../images/bg-header-mobile.png) no-repeat;
+        background-size: 100% auto;
+        background-position: top center;
     }
 
-    .section-2 .split-card{
+    .hero .hero-logo {
+        width: 5.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero .hero-title h1 {
+        font-size: 1.7rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+
+    .hero .hero-description p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    button {
+        width: 100%;
+        max-width: 330px;
+        padding: 0.9rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .ios-btn {
+        margin-right: 0;
+    }
+
+    section {
+        width: 100%;
+        margin-bottom: 8rem;
+        padding: 0 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    .description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        max-width: 32rem;
+    }
+
+    .section-2 {
+        gap: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    .section-2 .split-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 2rem 0 0;
+    }
+
+    .section-2 .split-card img {
+        width: 100%;
+        max-width: 330px;
+        height: auto;
         margin: 0;
-    }       
-    
+    }
+
+    .section-2 .split-card .split-content {
+        padding: 0;
+        margin: 3rem 0 0;
+        gap: 2.5rem;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-2 .split-card .split-content .card {
+        width: 100%;
+    }
+
+    .section-2 .split-card .split-content .card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .section-2 .split-card .split-content .card p {
+        max-width: 25rem;
+        margin: auto;
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .section-3 {
+        margin-bottom: 8rem;
+    }
+
+    .section-3 .description {
+        margin-bottom: 2.5rem;
+    }
+
+    .section-3 img {
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+    }
+
+    .section-4 {
+        margin-bottom: 8rem;
+    }
+
+    .section-4 .description {
+        margin-bottom: 3rem;
+    }
+
+    .section-4 .cards {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 4rem;
+        width: 100%;
+    }
+
+    .section-4 .cards .card {
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .section-4 .cards .card img {
+        width: 3rem;
+    }
+
+    .section-4 .cards .card:last-child img {
+        margin-top: 0;
+    }
+
+    .section-4 .cards .card h3 {
+        font-size: 1.1rem;
+    }
+
+    .section-4 .cards .card .description {
+        max-width: 22rem;
+        margin-bottom: 0;
+        font-size: 0.9rem;
+    }
+
+    .section-5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        margin-bottom: 8rem;
+    }
+
+    .section-5 img {
+        max-width: 7rem;
+        height: auto;
+    }
+
+    .section-6 {
+        margin-bottom: 8rem;
+    }
+
+    .section-6 .description {
+        margin-bottom: 2rem;
+    }
+
+    .section-6 .hero-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .section-6 .hero-btn button {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem 1.5rem;
+        gap: 3rem;
+    }
+
+    footer .footer-flex {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    footer .footer-flex .footer-logo {
+        width: 3.5rem;
+        margin-left: 0;
+    }
+
+    footer .footer-flex .footer-txt {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        width: 100%;
+    }
+
+    footer .footer-flex .txt-box {
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    .footer-flex a {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    footer .icons {
+        width: auto;
+        gap: 1.5rem;
+    }
+
+    footer .icons img {
+        width: 1.2rem;
+    }
 }
 
