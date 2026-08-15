@@ -53,7 +53,7 @@ body{
     margin-bottom: 2.5rem;
 }
 
-button{
+.ios-btn, .mac-btn {
     padding: 0.8rem 2rem;
     color: white;
     font-weight: 600;
@@ -71,7 +71,7 @@ button{
     background: hsl(233, 100%, 69%);
 }
 
-button:hover{
+.ios-btn:hover, .mac-btn:hover {
     opacity: 0.7;
     cursor: pointer;
 }
@@ -93,7 +93,9 @@ section h2{
 
 .section-2 .split-card{
     display: flex;
-    margin-left: -8.5rem;
+    align-items: center;
+    width: 100%;
+    overflow: hidden; /* Prevent large image from causing horizontal scroll */
 }
 
 .description{
@@ -110,11 +112,13 @@ section h2{
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    margin-left: 2rem;
+    width: 50%;
 }
 
 .section-2  .split-card img{
-    margin-left: -2rem;
+    width: 50%;
+    object-fit: cover;
+    object-position: left;
 }
 
 .section-2  .split-card .split-content .card h3{
@@ -171,7 +175,8 @@ footer{
 footer .footer-flex{
     display: flex;
     gap: 6rem;
-    width: 80%;
+    width: 100%;
+    max-width: 800px;
     align-items: center;
 }
 
@@ -189,7 +194,6 @@ footer .footer-flex .txt-box{
 
 footer .footer-flex .footer-logo{
     width: 4.5rem;
-    margin-left: 6rem;
 }
 
 footer .footer-flex .footer-logo img{
