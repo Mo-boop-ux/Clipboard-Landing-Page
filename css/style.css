@@ -135,19 +135,32 @@ section h2{
     gap: 2rem;
 }
 
+.section-4 .description{
+    margin-bottom: 4rem;
+}
+
 .section-4 .cards .card{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: 20px;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .section-4 .cards .card img{
     width: 4rem;
 }
 
-/* Section "5" not styled yet its just took global styling*/
+.section-4 .cards .card:last-child img{
+    margin-top: 1rem;
+}
+
+.section-5{
+    align-items: center;
+    gap: 6rem;
+}
+/* Section "6" not styled yet its just took global styling*/
 
 footer{
     background: hsl(202, 11%, 97%);
